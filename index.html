@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href= 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css'>
+        <script src='script1.js'></script>
+        <link rel="stylesheet" href="stylesheet1.css">
+        <title>Sajt o vezbanju</title>
+    </head>
+<body>
+    <button id='dugmeGore'><a href='#naslov'>Top</a></button>
+    <div id='pojavljujeSeOdDesno'>
+    <h1 id='naslov'>Exercise</h1>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href='#Classification' id='first'>Classification</a>
+                    <div style="display: none;" class='classificationElements'>Aerobic</div>
+                    <div style="display: none;" class='classificationElements'>Anaerobic</div>
+                    <div style="display: none;" class='classificationElements'>Flexibility</div>
+        </li>
+        
+        <li class="nav-item"><a class="nav-link" href='#healthEffects' id='second'>Health effects</a></li>
+        <li class="nav-item"><a href='#mechanismOfEffect' class="nav-link" id="third">Mechanism of effects</a>
+            <div class="classificationToggle" >
+                    <div style="display: none;" class='classificationElements3'>Skeletal muscle</div>
+                    <div style="display: none;" class='classificationElements3'>Other peripheral organs</div>
+                    <div style="display: none;" class='classificationElements3'>Central nervous system</div>
+            </div>
+        </li>
+        <form class="form-inline" id='formaZaTrazenje'>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" id='pretraga' name="keyword">
+            <button class="btn btn-success" type="submit" id='pretrazi'>Search</button>
+        </form>
+            <!--Osposobi formu da trazi po stranici-->
+    </ul>
+</nav>
+</div>
+
+    <div id='pojavljujeSeOdLevo'>
+        <div id='prvaCelina'>
+        <h2 id='Classification'>1. Classification</h2>
+        <div id='tabs'>
+                <ul>
+                    <li><a href="#tabs-1">Aerobic</a></li>
+                    <li><a href="#tabs-2">Anaerobic</a></li>
+                    <li><a href="#tabs-3">Flexibility</a></li>
+                </ul>
+               <div id='tabs-1'>
+                   <p>Aerobic exercise is any physical activity that uses large muscle groups and causes the body to use more oxygen than it would while resting.[5] The goal of aerobic exercise is to increase cardiovascular endurance.[6] Examples of aerobic exercise include running, cycling, swimming, brisk walking, skipping rope, rowing, hiking, dancing, playing tennis, continuous training, and long distance running.</p>
+               </div> 
+               <div id='tabs-2'>
+                    <p>Anaerobic exercise, which includes strength and resistance training, can firm, strengthen, and increase muscle mass, as well as improve bone density, balance, and coordination.[5] Examples of strength exercises are push-ups, pull-ups, lunges, squats, bench press. Anaerobic exercise also include weight training, functional training, eccentric training, interval training, sprinting, and high-intensity interval training increase short-term muscle strength.</p>
+               </div> 
+               <div id='tabs-3'>
+                    <p>Flexibility exercises stretch and lengthen muscles.[5] Activities such as stretching help to improve joint flexibility and keep muscles limber.[5] The goal is to improve the range of motion which can reduce the chance of injury.</p>
+               </div> 
+            </div>
+        </div>
+
+    <div id='drugaCelina'>
+        <h2 id='healthEffects'>2. Health effects</h2>
+        <h3 id='slide'><span style="color: red;" id='blinker'>Click</span> to slide up and down text</h3>
+            <p id='slidingParagraph' style="display: none;">Physical exercise is important for maintaining physical fitness and can contribute to maintaining a healthy weight, regulating the digestive system, building and maintaining healthy bone density, muscle strength, and joint mobility, promoting physiological well-being, reducing surgical risks, and strengthening the immune system. Some studies indicate that exercise may increase life expectancy and the overall quality of life.[12] People who participate in moderate to high levels of physical exercise have a lower mortality rate compared to individuals who by comparison are not physically active.[13] Moderate levels of exercise have been correlated with preventing aging by reducing inflammatory potential.[14] The majority of the benefits from exercise are achieved with around 3500 metabolic equivalent (MET) minutes per week, with diminishing returns at higher levels of activity.[15] For example, climbing stairs 10 minutes, vacuuming 15 minutes, gardening 20 minutes, running 20 minutes, and walking or bicycling for transportation 25 minutes on a daily basis would together achieve about 3000 MET minutes a week.[15] A lack of physical activity causes approximately 6% of the burden of disease from coronary heart disease, 7% of type 2 diabetes, 10% of breast cancer and 10% of colon cancer worldwide.[16] Overall, physical inactivity causes 9% of premature mortality worldwide.</p>
+        </div>
+
+       <div id='trecaCelina'> 
+        <div id='tabs2'>
+            <h2 id='mechanismOfEffect'>3. Mechanism of effects</h2>
+                <ul>
+                 <li><a href="#tabs-4">Skeletal muscle</a></li>
+                 <li><a href="#tabs-5">Other peripheral organs</a></li>
+                 <li><a href="#tabs-6">Central nervous system</a></li>
+                </ul>
+                 <div id='tabs-4'>
+                     <p>Resistance training and subsequent consumption of a protein-rich meal promotes muscle hypertrophy and gains in muscle strength by stimulating myofibrillar muscle protein synthesis (MPS) and inhibiting muscle protein breakdown (MPB). The stimulation of muscle protein synthesis by resistance training occurs via phosphorylation of the mechanistic target of rapamycin (mTOR) and subsequent activation of mTORC1, which leads to protein biosynthesis in cellular ribosomes via phosphorylation of mTORC1's immediate targets (the p70S6 kinase and the translation repressor protein 4EBP1).[86][88] The suppression of muscle protein breakdown following food consumption occurs primarily via increases in plasma insulin.[86][89][90] Similarly, increased muscle protein synthesis (via activation of mTORC1) and suppressed muscle protein breakdown (via insulin-independent mechanisms) has also been shown to occur following ingestion of β-hydroxy β-methylbutyric acid.
+
+                        Aerobic exercise induces mitochondrial biogenesis and an increased capacity for oxidative phosphorylation in the mitochondria of skeletal muscle, which is one mechanism by which aerobic exercise enhances submaximal endurance performance.[92] [86][93] These effects occur via an exercise-induced increase in the intracellular AMP:ATP ratio, thereby triggering the activation of AMP-activated protein kinase (AMPK) which subsequently phosphorylates peroxisome proliferator-activated receptor gamma coactivator-1α (PGC-1α), the master regulator of mitochondrial biogenesis.</p>
+                 </div>
+                 <div id='tabs-5'>
+                     <p>Developing research has demonstrated that many of the benefits of exercise are mediated through the role of skeletal muscle as an endocrine organ. That is, contracting muscles release multiple substances known as myokines which promote the growth of new tissue, tissue repair, and multiple anti-inflammatory functions, which in turn reduce the risk of developing various inflammatory diseases.[108] Exercise reduces levels of cortisol, which causes many health problems, both physical and mental. Endurance exercise before meals lowers blood glucose more than the same exercise after meals.[110] There is evidence that vigorous exercise (90–95% of VO2 max) induces a greater degree of physiological cardiac hypertrophy than moderate exercise (40 to 70% of VO2 max), but it is unknown whether this has any effects on overall morbidity and/or mortality.[111] Both aerobic and anaerobic exercise work to increase the mechanical efficiency of the heart by increasing cardiac volume (aerobic exercise), or myocardial thickness (strength training). Ventricular hypertrophy, the thickening of the ventricular walls, is generally beneficial and healthy if it occurs in response to exercise.</p>
+                 </div>
+
+                 <div id='tabs-6'><p>The effects of physical exercise on the central nervous system are mediated in part by specific neurotrophic factor hormones that are released into the blood stream by muscles, including BDNF, IGF-1, and VEGF.</p>
+                     
+                 </div>
+              </div>
+            </div>
+
+
+            <div id='modalForm'>
+                <div id='slike'>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id='buttonPics'>Show nice pictures of exercises</button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                          
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Pictures of exercises</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="images/plivanje.jpg" alt="Sportska slika" >
+                                <img src="images/bench.jpg" alt="Sportska slika" >
+                                <img src="images/kikboks.jpg" alt="Sportska slika" >
+                                <img src="images/penjanje.jpg" alt="Sportska slika" >
+                                <img src="images/running.jpg" alt="Sportska slika">
+                                <img src="images/streetw.jpg" alt="Sportska slika">
+
+
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>  
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='forma'>
+                    <form class="was-validated">
+                        <div class="form-group">
+                            <label for="uname">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required title="Please provide your username.">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required title="Please provide your password.">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                          </div>
+                          <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox" name="remember" required> I agree on healhty life lol.
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Check this checkbox to continue.</div>
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>&copy; DARKO SPASOJEVIC</footer>
+
+
+
+</body>
+</html>
